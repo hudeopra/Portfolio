@@ -5,3 +5,24 @@ body {
         line-height: 1.7;
         box-sizing: border-box;
     }
+
+.primary-heading{
+    font-size: 4.2rem;
+    color: $white;
+    line-height: 1;
+}
+
+.sub-heading{
+    font-size: 3rem;
+    color: #31C7B0;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+}
+
+.description{
+    padding-top: 3rem;
+    color: #ABD2CB;
+    font-size: 1.4rem;
+    
+}

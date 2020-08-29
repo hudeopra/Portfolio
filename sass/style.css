@@ -59,6 +59,26 @@ body {
           box-sizing: border-box;
 }
 
+.primary-heading {
+  font-size: 4.2rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.sub-heading {
+  font-size: 3rem;
+  color: #31C7B0;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+}
+
+.description {
+  padding-top: 3rem;
+  color: #ABD2CB;
+  font-size: 1.4rem;
+}
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-align: center;
@@ -106,8 +126,8 @@ body {
 }
 
 .btn:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
+  -webkit-transform: scaleX(1.2) scaleY(1.5);
+          transform: scaleX(1.2) scaleY(1.5);
   /* scale-all direction Multiply size
                                     scaleX means only in X
                                     scaleY means only in Y*/
@@ -121,7 +141,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 5rem;
+  border-radius: 3rem 3rem 0 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -205,6 +225,7 @@ header {
   color: #31C7B0;
   line-height: 1.2;
   font-weight: 400;
+  text-align: center;
 }
 
 .description {
@@ -217,6 +238,7 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(#178271), to(#13514C));
   background-image: linear-gradient(90deg, #178271, #13514C);
   position: relative;
+  padding: 10rem 22rem;
 }
 
 .work .sub-heading {
@@ -225,7 +247,7 @@ header {
 
 .work .pop-up {
   position: absolute;
-  top: -110%;
+  top: -57px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -233,5 +255,31 @@ header {
 
 .work .pop-up .btn:link, .work .pop-up .btn:visited {
   border-radius: 3rem 3rem 0 0;
+}
+
+.work__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem;
+}
+
+.work__gallery--image {
+  padding-bottom: 4.5rem;
+}
+
+.work__gallery--image:hover {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.work__gallery--image img {
+  height: 43.6rem;
+  width: 43.6rem;
 }
 /*# sourceMappingURL=style.css.map */
