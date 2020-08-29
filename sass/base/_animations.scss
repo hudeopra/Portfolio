@@ -1,0 +1,31 @@
+@-webkit-keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(50rem);
+    }
+    80%{
+         opacity: .4;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@-webkit-keyframes brustOut{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

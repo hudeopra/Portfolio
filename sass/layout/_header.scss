@@ -1,1 +1,86 @@
+header{
+    background-color: $primary-color;
+    overflow: auto;
+}
+.header{
+    background-image: linear-gradient(90deg,
+    $secondary-color, $primary-color);
+    margin: 110px 140px;
+    display: flex;
+    &__logo{
+        margin: 50px;
+        display: inline-block;
+    }
+    &__content{
+        width: 100%;
+        margin: 8rem 0 6.4rem;
+        &--title{
+            margin-bottom: 3rem;
+            color: #BFFFF5;
+            font-size: 2.6rem;
+            text-align: center;
+        }
+        &--intro{
+            display: flex;
+            justify-content: center;
+            margin-left: -19.5rem;
+            -webkit-animation-name: brustOut;
+                    animation-name: brustOut;
+            -webkit-animation-duration: 2s;
+                    animation-duration: 2s;
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+            
+        }
+    }
+}
+.introduction{
+    max-width: 38rem;
+    padding-top: 9rem;
+    -webkit-animation-name: moveInRight;
+            animation-name: moveInRight;
+    -webkit-animation-duration: .8s;
+            animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    .hi{
+        color: #00FEF4;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+}
+.primary-heading{
+    font-size: 4.2rem;
+    color: $white;
+    line-height: 1;
+}
+.sub-heading{
+    font-size: 3rem;
+    color: #31C7B0;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.description{
+    padding-top: 3rem;
+    color: #ABD2CB;
+    font-size: 1.4rem;
+    
+}
+.work{
+    background-image: linear-gradient(90deg,
+    $secondary-color, $primary-color);
+    position: relative;
+    .sub-heading{
+        color: #fff;
+    }
+    .pop-up{
+        position: absolute;
+        top: -110%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        .btn:link, .btn:visited{
+            border-radius: 3rem 3rem 0 0;
+        }
+    }
 
+}

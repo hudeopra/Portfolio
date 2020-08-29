@@ -3,6 +3,9 @@
     &:visited {
         display: inline-block;
         text-align: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $secondary-color;
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 5rem;
@@ -23,8 +26,8 @@
         }
     }
     &--animated{
-        -webkit-animation: moveInBottom .5s ease-out;
-                animation: moveInBottom .5s ease-out;
+        -webkit-animation: moveInBottom 2s ease-out;
+                animation: moveInBottom 2s ease-out;
     }
     &:hover{
         transform: translateY(-3px);

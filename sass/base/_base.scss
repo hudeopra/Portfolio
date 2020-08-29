@@ -3,12 +3,11 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
 }
 html{
     // this defines what 1 rem is
     font-size: 62.5%;
 }
-body {
-    box-sizing: border-box;
+img{
+    display: inline-block;
 }
