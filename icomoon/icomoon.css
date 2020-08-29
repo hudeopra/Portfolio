@@ -65,6 +65,9 @@
   content: "\e902";
   color: #bffff5;
 }
+.icon-view-show:before {
+  content: "\e90a";
+}
 /* personal code */
 .icon-divider{
   font-size: 40px;

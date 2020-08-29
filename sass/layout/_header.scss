@@ -49,24 +49,7 @@ header{
         font-weight: 300;
     }
 }
-.primary-heading{
-    font-size: 4.2rem;
-    color: $white;
-    line-height: 1;
-}
-.sub-heading{
-    font-size: 3rem;
-    color: #31C7B0;
-    line-height: 1.2;
-    font-weight: 400;
-    text-align: center;
-}
-.description{
-    padding-top: 3rem;
-    color: #ABD2CB;
-    font-size: 1.4rem;
-    
-}
+
 .work{
     background-image: linear-gradient(90deg,
     $secondary-color, $primary-color);
@@ -74,6 +57,7 @@ header{
     padding: 10rem 22rem;
     .sub-heading{
         color: #fff;
+        padding-bottom: 5rem;
     }
     .pop-up{
         position: absolute;
@@ -88,12 +72,27 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        background-color: #13514C;
         padding: 3rem;
         &--image{
             padding-bottom: 4.5rem;
+            position: relative;
+            &:nth-last-child(-n+3){
+                padding-bottom: 0;
+            }
             &:hover{
-                -webkit-filter: blur(4px);
-                        filter: blur(4px);
+                -webkit-filter: blur(1px);
+                        filter: blur(1px);
+                &:before{
+                    content: '\e90a';
+                    position: absolute;
+                    font-size: 5rem;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: 'icomoon' !important;
+                    color: $primary-color;
+                }
             }
             img{
                 height: 43.6rem;
