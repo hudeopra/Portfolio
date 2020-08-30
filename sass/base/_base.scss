@@ -11,3 +11,11 @@ html{
 img{
     display: inline-block;
 }
+.center{
+    max-width: 160rem;
+    margin: auto;
+    padding: 10rem 0;
+    &__small{
+        max-width: 120rem;
+    }
+}

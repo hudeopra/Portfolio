@@ -48,13 +48,15 @@ header{
         font-size: 1.6rem;
         font-weight: 300;
     }
+    .secondary-heading{
+        text-align: left;
+    }
 }
 
 .work{
     background-image: linear-gradient(90deg,
     $secondary-color, $primary-color);
     position: relative;
-    padding: 10rem 22rem;
     .sub-heading{
         color: #fff;
         padding-bottom: 5rem;
@@ -99,5 +101,28 @@ header{
                 width: 43.6rem;
             }
         } 
+    }
+}
+.about{
+    background-color: $primary-color;
+    .secondary-heading, .description{
+        color: $white;
+    }
+    .secondary-heading{
+        position: relative;
+        &:before{
+            content:'\e900';
+            font-family: 'icomoon' !important;
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            font-size: 1.5rem;
+        }
+    }
+    .description{
+        text-align: center;
+        font-weight: 300;
+        font-size: 2.2rem;
     }
 }
