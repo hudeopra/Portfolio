@@ -10,6 +10,8 @@ html{
 }
 img{
     display: inline-block;
+    width: 100%;
+    height: auto;
 }
 .center{
     max-width: 160rem;
@@ -18,4 +20,9 @@ img{
     &__small{
         max-width: 120rem;
     }
+}
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }

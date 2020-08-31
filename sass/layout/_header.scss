@@ -6,6 +6,7 @@ header{
     background-image: linear-gradient(90deg,
     $secondary-color, $primary-color);
     margin: 110px 140px;
+    padding: 0;
     display: flex;
     &__logo{
         margin: 50px;
@@ -124,5 +125,29 @@ header{
         text-align: center;
         font-weight: 300;
         font-size: 2.2rem;
+    }
+}
+.skills{
+    background-image: linear-gradient(90deg,
+                    $secondary-color, $primary-color);
+    figure{
+        max-width: 40rem;
+    }
+    &__front, &__design{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    &__front{
+        padding-bottom: 4rem;
+    }
+    &__design{
+        flex-direction: row-reverse;
+        .discription{
+            text-align: right;
+        }
+    }
+    .discription{
+        padding:0 3.5rem;
     }
 }
