@@ -152,9 +152,6 @@ header{
         padding: 0 3.5rem;
     }
 }
-footer{
-    background-color: $secondary-color;
-}
 .hello{
     display: flex;
     justify-content: center;
@@ -165,13 +162,16 @@ footer{
         }
     }
 }
-footer .center{
-    padding-bottom: 0;
-}
 .contact{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
+    background-color: $secondary-color;
+    .center{
+        padding-bottom: 2rem;
+    }
+    &__details{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
     &--info{
         display: flex;
         align-items: center;
@@ -196,8 +196,8 @@ footer .center{
             }
         }
     }
-}
-.copyright{
+} 
+footer.copyright p{
     text-align: center;
     padding: 1rem 0;
 }
