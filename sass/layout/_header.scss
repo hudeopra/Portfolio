@@ -16,10 +16,6 @@ header{
         width: 100%;
         margin: 8rem 0 6.4rem;
         &--title{
-            margin-bottom: 3rem;
-            color: #BFFFF5;
-            font-size: 2.6rem;
-            text-align: center;
         }
         &--intro{
             display: flex;
@@ -44,22 +40,38 @@ header{
             animation-duration: .8s;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-    .hi{
+    &--hi{
         color: #00FEF4;
         font-size: 1.6rem;
         font-weight: 300;
     }
-    .secondary-heading{
+    &--name{
+        
+    font-size: 4.2rem;
+    color: $white;
+    line-height: 1;
+    }
+    &--highlight{
         text-align: left;
         padding-bottom: 0;
+        color: #31C7B0;
+        font-size: 3.4rem;
+        line-height: 1.2;
+    }
+    .discription{
+        font-size: 1.6rem;
+        color: #ABD2CB;
     }
 }
-
 .work{
     background-image: linear-gradient(90deg,
     $secondary-color, $primary-color);
-    position: relative;
-    .sub-heading{
+    .center{
+        position: relative;
+        z-index: 1;
+
+    }
+    .heading--secondary{
         color: #fff;
         padding-bottom: 5rem;
     }
@@ -67,6 +79,7 @@ header{
         position: absolute;
         top: -57px;
         left: 50%;
+        z-index: -5;
         transform: translate(-50%, 0);
         .btn:link, .btn:visited{
             border-radius: 3rem 3rem 0 0;
@@ -79,7 +92,8 @@ header{
         background-color: #13514C;
         padding: 3rem;
         &--image{
-            padding-bottom: 4.5rem;
+            width: 30%;
+            padding-bottom: 3.5rem;
             position: relative;
             &:nth-last-child(-n+3){
                 padding-bottom: 0;
@@ -98,19 +112,15 @@ header{
                     color: $primary-color;
                 }
             }
-            img{
-                height: 43.6rem;
-                width: 43.6rem;
-            }
         } 
     }
 }
 .about{
     background-color: $primary-color;
-    .secondary-heading, .discription{
+    .heading--secondary, .discription{
         color: $white;
     }
-    .secondary-heading{
+    .heading--secondary{
         position: relative;
         &:before{
             content:'\e900';
@@ -126,6 +136,7 @@ header{
         text-align: center;
         font-weight: 300;
         font-size: 2.2rem;
+        letter-spacing: 0.05rem;
     }
 }
 .skills{
@@ -151,6 +162,9 @@ header{
     .discription{
         padding: 0 3.5rem;
     }
+    &__knowledge li{
+        line-height: 1.4;
+    }
 }
 .hello{
     display: flex;
@@ -171,6 +185,7 @@ header{
         display: flex;
         justify-content: space-between;
         padding: 2rem 0;
+        flex-wrap: wrap;
     }
     &--info{
         display: flex;
@@ -178,6 +193,7 @@ header{
         .discription{
             padding:0 1.5rem;
             font-size: 1.6rem;
+            
         }
         span{
             display: inline-block;
@@ -200,4 +216,17 @@ header{
 footer.copyright p{
     text-align: center;
     padding: 1rem 0;
+    color: $primary-color;
+}
+@media only screen and (max-width: 1230px){
+    .contact{
+        &__details{
+            padding-left: 15%;
+        }
+        &--info{
+            min-width: 50%;
+            padding-bottom: 2rem;
+        }
+    }
+        
 }
