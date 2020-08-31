@@ -33,7 +33,7 @@
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba(#000, 0.2);
         &::after{
-            transform: scaleX(1.2) scaleY(1.5);/* scale-all direction Multiply size
+            transform: scaleX(1.4) scaleY(1.6);/* scale-all direction Multiply size
                                     scaleX means only in X
                                     scaleY means only in Y*/
             opacity: 0; /* this means as it transiction from initial 
@@ -45,11 +45,20 @@
         display: inline-block;
         height: 100%;
         width: 100%;
-        border-radius: 3rem 3rem 0 0;
+        border-radius: 3rem;
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
         transition: all .2s;
+    }
+    &--work{
+        &:hover:after{
+                transform: scaleX(1.2) scaleY(1.5);
+                opacity: 0;
+            }
+        &:after{
+            border-radius: 3rem 3rem 0 0;
+        }
     }
 }

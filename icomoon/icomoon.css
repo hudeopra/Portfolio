@@ -27,43 +27,33 @@
 
 .icon-underline:before {
   content: "\e900";
-  color: #178271;
 }
 .icon-behance:before {
   content: "\e901";
-  color: #00ccac;
 }
 .icon-dribbble:before {
   content: "\e903";
-  color: #00ccac;
 }
 .icon-facebook-f:before {
   content: "\e904";
-  color: #00ccac;
 }
 .icon-location:before {
   content: "\e905";
-  color: #13514c;
 }
 .icon-mail-open:before {
   content: "\e906";
-  color: #13514c;
 }
 .icon-phone:before {
   content: "\e907";
-  color: #13514c;
 }
 .icon-time:before {
   content: "\e908";
-  color: #13514c;
 }
 .icon-viber:before {
   content: "\e909";
-  color: #00ccac;
 }
 .icon-divider:before {
   content: "\e902";
-  color: #bffff5;
 }
 .icon-view-show:before {
   content: "\e90a";
