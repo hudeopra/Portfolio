@@ -5,7 +5,7 @@ header{
 .header{
     background-image: linear-gradient(90deg,
     $secondary-color, $primary-color);
-    margin: 110px 140px;
+    margin: 110px  auto;
     padding: 0;
     display: flex;
     &__logo{
@@ -15,8 +15,6 @@ header{
     &__content{
         width: 100%;
         margin: 8rem 0 6.4rem;
-        &--title{
-        }
         &--intro{
             display: flex;
             justify-content: center;
@@ -46,10 +44,9 @@ header{
         font-weight: 300;
     }
     &--name{
-        
-    font-size: 4.2rem;
-    color: $white;
-    line-height: 1;
+        font-size: 4.2rem;
+        color: $white;
+        line-height: 1;
     }
     &--highlight{
         text-align: left;
@@ -66,20 +63,18 @@ header{
 .work{
     background-image: linear-gradient(90deg,
     $secondary-color, $primary-color);
-    .center{
-        position: relative;
-        z-index: 1;
-
-    }
+    position: relative;
+    z-index: 99;
     .heading--secondary{
         color: #fff;
         padding-bottom: 5rem;
     }
+    
     .pop-up{
         position: absolute;
         top: -57px;
         left: 50%;
-        z-index: -5;
+        z-index: 1;
         transform: translate(-50%, 0);
         .btn:link, .btn:visited{
             border-radius: 3rem 3rem 0 0;

@@ -202,7 +202,7 @@ header {
 .header {
   background-image: -webkit-gradient(linear, left top, right top, from(#178271), to(#13514C));
   background-image: linear-gradient(90deg, #178271, #13514C);
-  margin: 110px 140px;
+  margin: 110px  auto;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,11 +274,8 @@ header {
 .work {
   background-image: -webkit-gradient(linear, left top, right top, from(#178271), to(#13514C));
   background-image: linear-gradient(90deg, #178271, #13514C);
-}
-
-.work .center {
   position: relative;
-  z-index: 1;
+  z-index: 99;
 }
 
 .work .heading--secondary {
@@ -290,7 +287,7 @@ header {
   position: absolute;
   top: -57px;
   left: 50%;
-  z-index: -5;
+  z-index: 1;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
